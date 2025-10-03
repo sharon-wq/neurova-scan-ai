@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Brain } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 interface NavbarProps {
   onGetStarted: () => void;
@@ -42,9 +42,9 @@ export const Navbar = ({ onGetStarted }: NavbarProps) => {
             </a>
           </div>
 
-          <Button variant="hero" onClick={onGetStarted}>
+          <GradientButton onClick={onGetStarted}>
             Get Started
-          </Button>
+          </GradientButton>
         </div>
       </div>
     </nav>

@@ -1,5 +1,6 @@
 import { Brain, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { GradientButton } from "@/components/ui/gradient-button";
 
 interface HeroProps {
   onGetStarted: () => void;
@@ -32,15 +33,13 @@ export const Hero = ({ onGetStarted }: HeroProps) => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-            <Button 
-              variant="hero" 
-              size="lg" 
+            <GradientButton 
               onClick={() => document.getElementById('get-started')?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-lg px-8 py-6"
+              className="text-lg gap-2"
             >
               <Brain className="w-5 h-5" />
               Start Diagnosis
-            </Button>
+            </GradientButton>
             <Button 
               variant="glass" 
               size="lg" 

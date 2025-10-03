@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Doctors } from "@/components/Doctors";
 import { AuthDialog } from "@/components/AuthDialog";
+import { GradientButton } from "@/components/ui/gradient-button";
 import { useNavigate } from "react-router-dom";
 
 const Index = () => {
@@ -35,12 +36,12 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">
               Join thousands of medical professionals using Neurova for accurate brain tumor diagnostics
             </p>
-            <button
+            <GradientButton
               onClick={handleGetStarted}
-              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-primary via-secondary to-accent text-foreground font-semibold hover:opacity-90 transition-all duration-300 glow-cyan hover:glow-purple rounded-md text-lg px-8 py-4"
+              className="text-lg"
             >
               Get Started Now
-            </button>
+            </GradientButton>
           </div>
         </div>
       </section>
