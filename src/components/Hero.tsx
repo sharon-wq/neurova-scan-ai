@@ -35,13 +35,18 @@ export const Hero = ({ onGetStarted }: HeroProps) => {
             <Button 
               variant="hero" 
               size="lg" 
-              onClick={onGetStarted}
+              onClick={() => document.getElementById('get-started')?.scrollIntoView({ behavior: 'smooth' })}
               className="text-lg px-8 py-6"
             >
               <Brain className="w-5 h-5" />
               Start Diagnosis
             </Button>
-            <Button variant="glass" size="lg" className="text-lg px-8 py-6">
+            <Button 
+              variant="glass" 
+              size="lg" 
+              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+              className="text-lg px-8 py-6"
+            >
               Learn More
             </Button>
           </div>

@@ -26,7 +26,7 @@ const Index = () => {
       <Doctors />
       
       {/* CTA Section */}
-      <section className="py-24 relative">
+      <section id="get-started" className="py-24 relative">
         <div className="container mx-auto px-6">
           <div className="glass p-12 rounded-2xl text-center space-y-6 max-w-3xl mx-auto border-2 border-primary/30">
             <h2 className="text-4xl font-bold">
